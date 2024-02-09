@@ -22,7 +22,7 @@ contract and this transaction may fail.
 - - the amount the pool attempted to move.
 - - The balance of the account at the token contract
 
-#### What's goin on
+#### What's goin on:
 The tokens contract is reverting at the point the pool contract attempts to perform a `transferFrom`, to move tokens from the repaying account. 
 The revertion error indicates the allowance of the caller (pool) is less than the amount attempting to be transferred. 
 What can be unusual here, is that it's possible you perform the checks above, the allowance shows as equal to or slightly greater than the amount in the repayment transaction and yet you still receive the same error. In this case you can approve again with a buffer on the amount.
@@ -110,6 +110,7 @@ Manually enter an amount equal to or less than the collateral share.
 
 #### Obtaining the user collateral share:
 - Verified pool contract
+
 If the pool contract is verified at the explorer (in most cases this should happen automatically), then it as simple as navigating to the `Read tab` of the pool contract and calling the `user_collateral_share` method.
 
 <table>
@@ -145,6 +146,7 @@ If the pool contract is verified at the explorer (in most cases this should happ
 </table>
 
 - Unverified pool contract
+
 In a scenario where the contract is not verified, the method can be called programatically. 
 Accompanying the faq is a module called `cog_pair.py`, this can be used to quickly make a static call without any configuration, contract instances or abi.
 
