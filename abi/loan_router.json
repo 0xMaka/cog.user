@@ -1,0 +1,1 @@
+[{"stateMutability": "nonpayable", "type": "function", "name": "loan_tokens", "inputs": [{"name": "path", "type": "tuple[5]", "components": [{"name": "pair", "type": "address"}, {"name": "collateral_added", "type": "uint256"}, {"name": "assets_to_borrow", "type": "uint256"}]}, {"name": "deadline", "type": "uint256"}], "outputs": []}]
