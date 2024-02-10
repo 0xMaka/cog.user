@@ -45,10 +45,10 @@ Using a block explorer (https://scrollscan.com/), travel to the address for the 
   </tr>
   <tr>
     <td>
-        1. Obtain the addresses for the pool and token contracts  <br>
-        2. Travel to the tokens address using the  explorer.<br>
+        1. Obtain the addresses for the pool and token contracts <br>
+        2. Travel to the tokens address using the explorer.<br>
         3. Click the `Contract` tab, then navigate to the `Write contract` section. <br>
-        4. Connect your wallet, enter the pool address under spender, and number of tokens to approve under amount.<br>
+        4. Connect your wallet, enter the pool address under spender, and number of tokens to approve under amount. <br>
         5. Click `Write`.
     </td>
     <td>
@@ -66,9 +66,11 @@ Using a block explorer (https://scrollscan.com/), travel to the address for the 
 </table>
 
 - Obtaining the pool address:
+
 This can be sourced from the wallet pre repay confirmation, from a failed transaction under `interacted with:`, or from the pair lists found on github.<br>
 
 - Obtaining the token address:
+
 This can be sourced from the wallet pre approval confirmation, or via traveling to a token holders address (pool) in a block explorer and clicking on the token in the drop down list, as well as from the token lists found on github.<br>
 
 #### Why isn't the solution more eligant?
@@ -97,7 +99,7 @@ contract and this transaction may fail.
 #### What's goin on:
 The slider can at 100% input more than the accounts total collateral.
 
-In most cases the slider should input the excact amount that can be withdrawn, though in some cases it will overshoot, needing the caller to manually enter the correct value or remove a less than optimal amount.
+In most cases the slider should input the exact amount that can be withdrawn, though in some cases it will overshoot needing the caller to manually enter the correct value or remove a less than optimal amount.
 
 Using the amount of collateral found under `balance` on the remove collateral tab should work.
 However, the UI rounds to the nearest whole number and there is a conversion of amount to shares as well as some rounding that always favors the protocol.
