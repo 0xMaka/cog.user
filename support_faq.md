@@ -99,11 +99,12 @@ The slider can at 100% input more than the accounts total collateral.
 
 In most cases the slider should input the excact amount that can be withdrawn, though in some cases it will overshoot, needing the caller to manually enter the correct value or remove a less than optimal amount.
 
-Using the amount of collateral found on the deposit transaction, or on the borrow tab should work.
-However, while the UI rounds to the nearest whole number, there is a conversion of amount to shares and some rounding that always favors the protocol.
-If finding you cannot remove the exact amount, run the value through `amountToShares` first and input the value returned by that function.
+Using the amount of collateral found under `balance` on the remove collateral tab should work.
+However, the UI rounds to the nearest whole number and there is a conversion of amount to shares as well as some rounding that always favors the protocol.
+If finding you cannot remove that amount, then grab the exact amount from `user_collateral_share` and input the value returned by that function.
 
 - Quick fix
+
 Manually enter an amount equal to or less than the collateral share.
 - - If the slider at 100% shows `100.545684` usdt, when the collateral added was 100 usdt, try to remove `100.000000`, if still experiencing issues grab the exact number from `user_collateral_share`. <br> In the unlikely case that the above doesn't work, use the fractionally smaller number returned by `amountToShares`
 

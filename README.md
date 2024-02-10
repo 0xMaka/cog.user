@@ -122,7 +122,7 @@ cp.convert_to_shares(
 |------------------------------------------|----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | [cog_factory.json](abi/cog_factory.json) | A priviledged factory for creating Cog Pairs and managing their protocol-owned liquidity     | [cog_factory.vy](https://github.com/CogFinance/Cog-Isolated-Lending/blob/main/src/cog_factory.vy) |
 | [cog_pair.json](abi/cog_pair.json)       | Implementation of an isolated lending pool with PoL in Vyper                                 | [cog_pair.vy](https://github.com/CogFinance/Cog-Isolated-Lending/blob/main/src/cog_pair.vy)       |
-| [fuse_box.json](abi/fuse_box.json)       | A robust Oracle Implementation with secure upgradability in mind, and simplicity at its core | [fuse_box](https://github.com/CogFinance/Cog-Isolated-Lending/blob/main/src/fuse_box.vy])      |
+| [fuse_box.json](abi/fuse_box.json)       | A robust Oracle Implementation with secure upgradability in mind, and simplicity at its core | [fuse_box.vy](https://github.com/CogFinance/Cog-Isolated-Lending/blob/main/src/fuse_box.vy)       |
 | [loan_router.json](abi/loan_router.json) | A very smol helper contract for routing multiple borrows                                     | [loan_router.vy](https://github.com/CogFinance/Cog-Isolated-Lending/blob/main/src/loan_router.vy) |
 
 </div>
@@ -131,3 +131,4 @@ cp.convert_to_shares(
 ---
 > **_NOTE:_** As always it is suggested to consider personal circumstance, to do your own research and take the appropriate action for you.<br>
 Information provided here is an attempt to contribute to that research but in no way constitutes financial advise of any kind.
+
