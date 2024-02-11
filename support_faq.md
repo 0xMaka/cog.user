@@ -108,7 +108,7 @@ If finding you cannot remove that amount, then grab the exact amount from `user_
 - Quick fix
 
 Manually enter an amount equal to or less than the collateral share.
-- - If the slider at 100% shows `100.545684` usdt, when the collateral added was 100 usdt, try to remove `100.000000`, if still experiencing issues grab the exact number from `user_collateral_share`. <br> In the event the above doesn't work, round down the number by around 0.000000000000100000
+- - If the slider at 100% shows `100.545684` usdt, when the collateral added was 100 usdt, try to remove `100.000000`, if still experiencing issues grab the exact number from `user_collateral_share`. <br> In the event the above doesn't work, round down the number by around 1e5%
 
 
 #### Obtaining the user collateral share:
